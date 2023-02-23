@@ -4,7 +4,8 @@
   "description": "This my protfolio website",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "node index.js"
   },
   "author": "A. S. M. Sohag Abdullah",
   "license": "ISC",
