@@ -6,7 +6,7 @@
  **********************/
 
 //Dependecies
-const http = require("http");
+/* const http = require("http");
 const url = require("url");
 const fs = require("fs");
 const qs = require('querystring');
@@ -59,4 +59,17 @@ const server = http.createServer((req, res) => {
 
 server.listen(3000, "localhost", () => {
   console.log("Listening on port 3000");
+}); */
+
+
+const express = require("express");
+const app = express();
+app.use(express.static(__dirname + "/public/"));
+app.listen(3000, () => {
+  console.log("Application started and Listening on port 3000");
 });
+
+app.get("/", (req, res) => {
+  console.log(req.url);
+  res.sendFile(__dirname + "/public/" + "/index.html");
+}); 
