@@ -21,7 +21,7 @@ async function main(formData) {
 
   let info = await transporter.sendMail({
     from: `${formData.email} <sohag8455@gmail.com>`,
-    to: "sohag15-13845@diu.edu.bd",
+    to: `${process.env.RECIEVER}`,
     subject: `${formData.subject}`,
     text: `${formData.message}`,
     html: `<p>${formData.message}</p>

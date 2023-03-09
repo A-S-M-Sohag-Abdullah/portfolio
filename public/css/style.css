@@ -84,6 +84,13 @@ skills
   width: calc(50% - 10px);
   margin-bottom: 30px;
 }
+
+@media(max-width:792px){
+  .skill {
+    width: calc(100% - 10px);
+  }
+}
+
 .skill-name{
     font-size: 20px;
 }
